@@ -1,0 +1,10 @@
+.env
+*.session
+*.session-journal
+.venv/
+__pycache__/
+*.pyc
+results.json
+results.csv
+handlescope_config.json
+usernames.txt
