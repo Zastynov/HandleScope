@@ -11,11 +11,38 @@ Telegram username checker and generator.
 - Поиск свободных username
 - Проверка Fragment
 - Русский и английский интерфейс
+- Работа на Windows, Linux, macOS и Android через Termux
 
 ## Установка
 
-Откройте Termux и выполните:
+### Windows
 
+Установите Python 3.11 или новее.
+
+Клонируйте репозиторий:
+
+    git clone https://github.com/Zastynov/HandleScope.git
+
+Перейдите в папку:
+
+    cd HandleScope
+
+Установите зависимости:
+
+    pip install -r requirements.txt
+
+### Linux / macOS
+
+    git clone https://github.com/Zastynov/HandleScope.git
+    cd HandleScope
+    pip install -r requirements.txt
+
+### Android / Termux
+
+Установите Termux, затем выполните:
+
+    pkg update
+    pkg install git python
     git clone https://github.com/Zastynov/HandleScope.git
     cd HandleScope
     pip install -r requirements.txt
@@ -35,8 +62,16 @@ Telegram username checker and generator.
 
 ## Запуск
 
-Выполните:
+### Windows
 
+В командной строке или PowerShell:
+
+    cd HandleScope
+    python app.py
+
+### Linux / macOS / Termux
+
+    cd HandleScope
     python app.py
 
 При первом запуске Telegram может попросить авторизацию аккаунта.
@@ -45,15 +80,17 @@ Telegram username checker and generator.
 
 Для массовой проверки используется TXT-файл.
 
-Можно указать только название файла:
+Можно указать название файла:
 
     users.txt
 
-Если файл находится в папке проекта.
-
-Или указать полный путь:
+или полный путь:
 
     /sdcard/Download/users.txt
+
+На Windows можно использовать, например:
+
+    C:\Users\User\Downloads\users.txt
 
 Каждый username должен находиться на отдельной строке.
 
@@ -62,6 +99,12 @@ Telegram username checker and generator.
     username1
     username2
     username3
+
+## Получение Telegram API
+
+Для работы программы нужны Telegram API ID и API Hash.
+
+Их можно получить через Telegram API development tools.
 
 ## Лицензия
 
